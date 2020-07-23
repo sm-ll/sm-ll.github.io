@@ -1,0 +1,316 @@
+/* import "import" */
+/* styles */
+/* core */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* variables */
+/* colors */
+/* core */
+html ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0;
+  background: #fff;
+}
+
+body {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+  background: #000;
+}
+
+.wrapper {
+  width: 98%;
+  margin: 0 auto;
+  max-width: 1440px;
+  margin-top: 0.625rem;
+}
+
+.container {
+  float: left;
+  width: 100%;
+}
+
+section.section {
+  float: left;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+section.section .single {
+  float: left;
+  width: 12.5%;
+  width: auto;
+  margin-right: 10%;
+  margin-bottom: 0.625rem;
+}
+section.section .single a {
+  display: block;
+}
+section.section .single:last-child {
+  margin-right: 0;
+}
+
+/* typography */
+body {
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 60px;
+}
+
+h2 {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  user-select: none;
+  /* Likely future */
+  font-size: 58px;
+  line-height: 58px;
+  text-transform: uppercase;
+  letter-spacing: 12px;
+  margin-left: 12px;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+h2 span:nth-child(even), h2 span:nth-child(odd) {
+  opacity: 1;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 0.625rem;
+  letter-spacing: 0;
+}
+
+.focus .product h2 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-left: 0;
+  margin-top: 0;
+}
+.focus .product p {
+  text-transform: uppercase;
+}
+.focus .product .more p, .focus .product ol li {
+  text-transform: none;
+}
+.focus .product .more ol {
+  padding: 2.5rem 0 0 0;
+}
+.focus .product .more ol li {
+  font-size: 0.8rem;
+  line-height: 1rem;
+  font-style: italic;
+  margin-bottom: 0.625rem;
+}
+.focus .product .more ol li:after {
+  content: "";
+}
+
+.product h3, .product p {
+  text-transform: uppercase;
+  word-break: break-all;
+}
+
+h3 {
+  font-size: 10rem;
+  line-height: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 5rem;
+  line-height: 1rem;
+  margin-bottom: 0;
+}
+p + .small {
+  margin-top: 1.25rem;
+}
+p + .small + .small {
+  margin-top: 0.9375rem;
+}
+p.date {
+  margin-top: 1.875rem;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.small {
+  font-size: 0.8rem;
+  line-height: 1rem;
+}
+
+/* related */
+ul li, ol li {
+  font-size: 0.75rem;
+  font-family: monaco, Consolas, "Lucida Console", monospace;
+  display: inline;
+  margin: 0 0.3125rem;
+}
+
+.modal h3 {
+  margin: 2.5rem 0 1.25rem 0;
+}
+.modal li {
+  margin-bottom: 0.625rem;
+}
+
+footer ul li a {
+  background: #000;
+}
+footer ul li a:hover {
+  background: #fff;
+}
+
+/* footer */
+footer {
+  background: #000;
+  bottom: 1%;
+  position: fixed;
+}
+footer .mantra {
+  margin: 0 auto;
+}
+footer nav ul li {
+  display: inline;
+  margin-right: 0.3125rem;
+  margin-left: 0;
+}
+footer nav ul li:last-child {
+  margin: 0;
+}
+footer .back {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  padding: 0 48px;
+  line-height: 2.5rem;
+  background: #fff;
+  color: #000;
+  position: fixed;
+  z-index: 1000;
+  text-transform: capitalize;
+  -webkit-box-shadow: 0 4px 5px black;
+  -moz-box-shadow: 0 4px 5px black;
+  box-shadow: 0 4px 5px black;
+  border: none;
+  bottom: 0;
+  left: 0;
+}
+footer .back:hover {
+  color: #000;
+}
+footer .back a {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  text-align: center;
+}
+footer .back:hover {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* responsive */
+@media only screen and (max-width: 850px) {
+  section.section .single {
+    float: left;
+    width: 100%;
+    margin-right: 0;
+  }
+  section.section .single a {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
