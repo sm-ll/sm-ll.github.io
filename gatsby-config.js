@@ -5,7 +5,6 @@
  */
 
 module.exports = {
-  pathPrefix: "/master",
   siteMetadata: {
     title: `sm-ll`,
   },
