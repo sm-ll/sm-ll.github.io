@@ -18,5 +18,17 @@ module.exports = {
     },  
   	`gatsby-plugin-sass`,
     `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `sm-ll`,
+        short_name: `sm-ll`,
+        start_url: `/`,
+        background_color: `#000`,
+        theme_color: `#000`,
+        display: `standalone`,
+        icon: `src/images/favicon-32x32.png`,
+      },
+    },
   ],
 }

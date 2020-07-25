@@ -1,10 +1,8 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import Footer from "../components/footer"
 
-export default function Home({ data }) {
-  console.log(data)
+export default function ({ data }) {
   return (
     <Layout>
       <div>
@@ -58,7 +56,6 @@ export default function Home({ data }) {
         </div>        
         </section>        
       </div>
-      <Footer />
     </Layout>
   )
 }
