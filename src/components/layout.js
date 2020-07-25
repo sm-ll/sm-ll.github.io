@@ -6,6 +6,13 @@ export default function Layout({ children }) {
       <div class="container">
 	      {children}
       </div>
+  		<footer>
+			  <nav>
+			    <ul>
+			      <li>london.{new Date().getFullYear()}</li>
+			    </ul>
+			  </nav>
+			</footer>
     </div>
   	)
 }
